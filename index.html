@@ -1,100 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ====== Google Fonts ====== -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Rubik:wght@700;800;900&display=swap"
+      rel="stylesheet">
+   <!-- ====== Remixicon ====== -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css">
+   <!-- ====== CSS ====== -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <!-- ====== Favicon ====== -->
+   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+   <title>Hotline Miami</title>
 </head>
 
 <body>
-  <header>
-    <a class="logo" href="index.html">snap</a>
+   <header class="header">
 
-    <div class="toggle" id="toggle">
-      <img src="images/icon-menu.svg" alt="menu">
-    </div>
+      <a href="index.html">
+         <img class="logo" src="assets/images/dennaton-games.png" alt="Dennation Games">
+      </a>
 
-    <nav>
-      <div class="nav_menu" id="menu">
-        <ul class="nav_list">
-          <div class="close" id="close">
-            <img src="images/icon-close-menu.svg" alt="close">
-          </div>
 
-          <li class="nav_item">
-            <a href="#" class="nav_link">
-              Features <img src="images/icon-arrow-down.svg" alt="" class="icon">
-            </a>
-
-            <ul class="nav_dropdown" id="dropdown">
-              <li><a href="#"><img src="images/icon-todo.svg" alt="" class="img-icon"> Todo List</a></li>
-              <li><a href="#"><img src="images/icon-calendar.svg" alt="" class="img-icon"> Calendar</a></li>
-              <li><a href="#"><img src="images/icon-reminders.svg" alt="" class="img-icon"> Reminders</a></li>
-              <li><a href="#"><img src="images/icon-planning.svg" alt="" class="img-icon"> Planning</a></li>
-            </ul>
-          </li>
-
-          <li class="nav_item">
-            <a href="#" class="nav_link">
-              Company <img src="images/icon-arrow-down.svg" alt="" class="icon"></ion-icon>
-            </a>
-
-            <ul class="nav_dropdown" id="dropdown">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </li>
-
-          <li class="nav_item">
-            <a href="#" class="nav_link">Careers</a>
-          </li>
-
-          <li class="nav_item">
-            <a href="#" class="nav_link">About</a>
-          </li>
-
-          <!-- <div class="sign">
-            <a href="#">Login</a>
-            <a class="register-btn" href="#">Register</a>
-          </div> -->
-        </ul>
-        <div class="sign">
-          <a href="#">Login</a>
-          <a class="register-btn" href="#">Register</a>
-        </div>
+      <div class="toggle" id="toggle">
+         <img src="assets/images/toggle.svg" alt="Menu" id="toggle-img">
       </div>
-    </nav>
-  </header>
+      <nav class="nav" id="menu">
+         <ul class="nav-list">
+            <li class="nav-item"><a href="#accueil">Accueil</a></li>
+            <li class="nav-item"><a href="#a-propos">À propos</a></li>
+            <li class="nav-item"><a href="#galerie">Galerie</a></li>
+            <li class="nav-item"><a href="#acheter">Acheter</a></li>
+         </ul>
+      </nav>
+   </header>
 
-  <section class="hero">
-    <div class="hero-left">
-      <img src="images/image-hero-desktop.png" alt="Hero desktop">
-    </div>
+   <main>
+      <section class="accueil" id="accueil">
+         <img class="accueil-img" src="assets/images/hotline-miami.png" alt="Hotline Miami">
+         <img class="arrow" src="assets/images/down-arrow.svg" alt="Flèche" class="arrow">
+      </section>
 
-    <div class="hero-right">
-      <h1 class="hero-title"> Make remote work</h1>
-      <p class="hero-desc">
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
+      <section class="about" id="a-propos">
+         <h2>À propos du jeu</h2>
+         <div class="section-content">
+            <iframe width="350" height="350" src="https://www.youtube.com/embed/Qtl2fG-_l9M?si=eXNwv4uFvSgEzSph"
+               title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen>
+            </iframe>
 
-      <a href="#" class="hero-cta">Learn more</a>
+            <div class="right-content">
+               <p class="desc-1">
+                  Hotline Miami est un jeu d'action à haute intensité, débordant de brutalité, de jeu d'armes à feu et
+                  de combats rapprochés qui écrasent le crâne. Dans un Miami alternatif de 1989, vous incarnez un
+                  mystérieux antihéros qui se lance dans une folie meurtrière contre le monde interlope, à la demande
+                  des voix qui s'expriment sur votre répondeur. Très vite, vous aurez du mal à comprendre ce qui se
+                  passe et pourquoi vous êtes enclin à commettre ces actes de violence.
+               </p>
 
-      <div class="clients">
-        <img src="images/client-databiz.svg" alt="databiz" class="client">
-        <img src="images/client-audiophile.svg" alt="audiophile" class="client">
-        <img src="images/client-meet.svg" alt="eeet" class="client">
-        <img src="images/client-maker.svg" alt="maker" class="client">
-      </div>
-    </div>
-  </section>
-  <script type="text/javascript" src="script.js"></script>
+               <p class="desc-2">
+                  Comptez sur votre intelligence pour vous frayer un chemin dans des situations apparemment impossibles,
+                  alors que vous vous retrouvez constamment en infériorité numérique face à des ennemis vicieux.
+                  L'action est incessante et chaque tir est mortel. Chaque mouvement doit donc être rapide et décisif si
+                  vous espérez survivre et découvrir les forces sinistres qui sont à l'origine de l'effusion de sang. Le
+                  style visuel incomparable de Hotline Miami, sa bande-son entraînante et son enchaînement surréaliste
+                  d'événements vous feront remettre en question votre propre soif de sang tout en vous poussant dans vos
+                  derniers retranchements grâce à un défi brutal et impitoyable.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <section class="galerie" id="galerie">
+         <figure class="galerie-item">
+            <a href=""><img src="assets/images/galerie/image-1.jpg" alt="Image 1" class="galerie-img"></a>
+         </figure>
+         <figure class="galerie-item">
+            <a href=""><img src="assets/images/galerie/image-2.jpg" alt="Image 2" class="galerie-img"></a>
+         </figure>
+         <figure class="galerie-item">
+            <a href=""><img src="assets/images/galerie/image-3.jpg" alt="Image 3" class="galerie-img"></a>
+         </figure>
+         <figure class="galerie-item">
+            <a href=""><img src="assets/images/galerie/image-4.jpg" alt="Image 4" class="galerie-img"></a>
+         </figure>
+         <figure class="galerie-item">
+            <a href=""><img src="assets/images/galerie/image-5.jpg" alt="Image 5" class="galerie-img"></a>
+         </figure>
+         <figure class="galerie-item">
+            <a href=""><img src="assets/images/galerie/image-6.jpg" alt="Image 6" class="galerie-img"></a>
+         </figure>
+      </section>
+
+      <section class="buy" id="acheter">
+         <div class="section-content">
+            <div class="left-content">
+               <img src="assets/images/game-cover-mobile.png" alt="Hotline Miami">
+            </div>
+
+            <div class="right-content">
+               <div class="first-infos">
+                  <h1>Hotline Miami</h1>
+                  <p>Développeur : Dennation Games</p>
+                  <p>Éditeur : Devolver Digital</p>
+                  <p>Date de parution : 23 oct 2012</p>
+               </div>
+
+               <div class="second-infos">
+                  <h2>Disponible sur :</h2>
+                  <div class="devices">
+                     <ul class="devices-list">
+                        <li class="device"><a href="https://store.playstation.com/fr-lu/product/EP3643-CUSA00528_00-HOTLINEMIAMIBNDL" target="_blank"><i class="ri-playstation-fill"></i></a></li>
+                        <li class="device"><a href="https://www.xbox.com/fr-FR/games/store/hotline-miami/9MV27QPRQRRF" target="_blank"><i class="ri-xbox-fill"></i></a></li>
+                        <li class="device"><a href="https://www.nintendo.fr/Jeux/Jeux-a-telecharger-sur-Nintendo-Switch/Hotline-Miami-Collection-1621521.html" target="_blank"><i class="ri-switch-fill"></i></a></li>
+                        <li class="device"><a href="https://store.steampowered.com/app/219150/Hotline_Miami/?l=french" target="_blank"><i class="ri-steam-fill"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
 </body>
 
 </html>
