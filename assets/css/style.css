@@ -126,7 +126,6 @@ a {
    height: 195px;
    margin-top: 55%;
 }
-
 /* 
 .arrow {
    position: absolute;
@@ -140,12 +139,20 @@ a {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 10px;
+   padding: 15px;
 }
 
 .about h2 {
    font-size: var(--h2);
    margin-bottom: 20px;
+}
+
+.left-content {
+   width: 100%;
+   /* height: 380px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .desc-1 {
