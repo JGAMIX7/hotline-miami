@@ -126,13 +126,23 @@ a {
    height: 195px;
    margin-top: 55%;
 }
-/* 
-.arrow {
-   position: absolute;
-   bottom: 20px;
-   left: 45%;
-} */
 
+.arrow {
+animation: bounce 2s ease-in-out infinite;
+} 
+
+@keyframes bounce {
+   0%{
+      transform: translateY(0);
+   }
+   50%{
+      transform: translateY(20px);
+   }
+   100%{
+      transform: translateY(0);
+   }
+
+}
 /* ====== À propos ====== */
 .about {
    margin-top: 80px;
