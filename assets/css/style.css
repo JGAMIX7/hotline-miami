@@ -10,7 +10,7 @@
    --black-55: rgba(0, 0, 0, 0.55);
    --black-90: rgba(0, 0, 0, 0.9);
    --black-70: rgba(0, 0, 0, 0.7);
-   --blue: rgb(39,253,245);
+   --blue: rgb(39, 253, 245);
    --pink: rgb(199, 61, 127);
    --white: rgb(255, 255, 255);
 
@@ -25,7 +25,7 @@
    --h2: 2.25rem;
 }
 
-html{
+html {
    scroll-behavior: smooth;
 }
 
@@ -80,6 +80,7 @@ a {
    background-color: var(--black-90);
    padding: 50px;
 }
+
 .active {
    top: 70px;
 }
@@ -98,7 +99,7 @@ a {
    position: relative;
 }
 
-.nav-item::after{
+.nav-item::after {
    position: absolute;
    content: "";
    left: 0;
@@ -109,7 +110,7 @@ a {
    transition: width .3s;
 }
 
-.nav-item:hover::after{
+.nav-item:hover::after {
    width: 100%;
 }
 
@@ -121,10 +122,11 @@ a {
    text-align: center;
 }
 
-.accueil-img{
+.accueil-img {
    height: 195px;
    margin-top: 55%;
-} 
+}
+
 /* 
 .arrow {
    position: absolute;
@@ -157,19 +159,19 @@ a {
    grid-template-columns: 1fr;
 }
 
-.galerie-item{
+.galerie-item {
    width: 100%;
    max-height: 340px;
-   overflow: hidden;
 }
-.galerie-item{
+
+.galerie-item img {
    width: 100%;
    height: 100%;
    object-fit: cover;
-   /* transform: scale(1.2); */
 }
+
 /* ====== Acheter  ====== */
-.buy{
+.buy {
    text-align: center;
 }
 
@@ -178,22 +180,22 @@ h1 {
    text-transform: uppercase;
 }
 
-.second-infos{
+.second-infos {
    margin: 20px 0;
 }
 
-.devices-list{
+.devices-list {
    list-style: none;
    display: flex;
    justify-content: center;
    gap: 20px;
 }
 
-.device{
+.device {
    font-size: 60px;
 }
 
-i:hover{
+i:hover {
    transition: .3s;
    color: var(--blue);
 }
