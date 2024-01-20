@@ -75,8 +75,8 @@ a {
 .nav {
    display: none;
    position: absolute;
-   top: 70px;
-   right: 0;
+   top: 0px;
+   left: 0;
    width: 100%;
    background-color: var(--black-90);
    padding: 50px;
@@ -94,6 +94,12 @@ a {
    justify-content: center;
    align-items: center;
    gap: 30px;
+}
+
+.close{
+   position: absolute;
+   top: 18px;
+   right: 24px;
 }
 
 .nav-item a{

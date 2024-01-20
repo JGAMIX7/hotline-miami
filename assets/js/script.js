@@ -6,10 +6,13 @@ const img = document.getElementById("toggle-img");
 if (toggle) {
   toggle.addEventListener("click", () => {
     menu.classList.add("active");
-    img.src = "../images/close.svg";
+    toggle.style.display = "none";
   });
-} else {
-  toggle.addEventListener("click", () => {
+}
+
+if (close) {
+  close.addEventListener("click", () => {
     menu.classList.remove("active");
+    toggle.style.display = "block";
   });
 }
