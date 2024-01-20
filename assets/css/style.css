@@ -327,10 +327,16 @@ i:hover {
    /* ====== Acheter  ====== */
    .buy-section {
       flex-direction: row;
+      /* justify-content: start; */
+      gap: 30px;
       padding-bottom: 50px;
    }
 
    .left-content{
       width: auto;
+   }
+
+   .right-content{
+      text-align: start;
    }
 }
