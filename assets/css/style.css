@@ -7,22 +7,11 @@
 /* ====== Variables ====== */
 :root {
    /* couleurs */
-   --black-55: rgba(0, 0, 0, 0.55);
    --black-90: rgba(0, 0, 0, 0.9);
    --black-70: rgba(0, 0, 0, 0.7);
    --blue: rgb(39, 253, 245);
    --pink: rgb(199, 61, 127);
    --white: rgb(255, 255, 255);
-
-   /* Graisse */
-   --500: 500;
-   --700: 700;
-   --800: 800;
-   --900: 900;
-   /* Taille de police */
-   /* 24 = 1.5 ; 20 = 1.25 ;  18 = 1.125*/
-   --h1: 2.625rem;
-   --h2: 2.25rem;
 }
 
 html {
@@ -45,7 +34,7 @@ h2 {
 p,
 a {
    font-family: 'Roboto Mono', monospace;
-   font-weight: var(--500);
+   font-weight: 500;
 }
 
 a {
@@ -103,7 +92,7 @@ a {
 }
 
 .nav-item a {
-   font-size: 24px;
+   font-size: 1.5rem;
    transition: color .3s;
    position: relative;
 }
@@ -170,7 +159,7 @@ a {
 }
 
 .about h2 {
-   font-size: var(--h2);
+   font-size: 2.25rem;
    margin-bottom: 20px;
 }
 
@@ -213,7 +202,8 @@ a {
 }
 
 h1 {
-   font-size: 46px;
+   font-size: 2.875rem;
+   font-weight: 900;
    text-transform: uppercase;
 }
 
@@ -234,7 +224,7 @@ h1 {
 }
 
 .device {
-   font-size: 60px;
+   font-size: 3.75rem;
 }
 
 i:hover {
@@ -267,7 +257,7 @@ i:hover {
    .desc-1,
    .desc-2 {
       padding-left: 25px;
-      font-size: 12px;
+      font-size: 0.75rem;
    }
 
    /* ====== Galerie ====== */
@@ -330,8 +320,8 @@ i:hover {
 
    .nav-item a {
       font-family: 'Rubik', sans-serif;
-      font-weight: var(--700);
-      font-size: 20px;
+      font-weight: 700;
+      font-size: 1.25rem;
       letter-spacing: 1px;
    }
 
@@ -360,7 +350,7 @@ i:hover {
    .desc-1,
    .desc-2 {
       padding-left: 25px;
-      font-size: 16px;
+      font-size: 1rem;
    }
 
    /* ====== Galerie ====== */
@@ -391,6 +381,6 @@ i:hover {
 @media all and (min-width: 1440px) {
    .desc-1,
    .desc-2 {
-      font-size: 18px;
+      font-size: 1.125rem;
    }
 }
