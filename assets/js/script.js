@@ -9,8 +9,8 @@ if (toggle) {
   });
 }
 
-// if (close) {
-//   close.addEventListener("click", () => {
+// if (toggle) {
+//   toggle.addEventListener("click", () => {
 //     menu.classList.remove("active");
 //   });
 // }
