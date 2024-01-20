@@ -258,6 +258,9 @@ i:hover {
    .toggle {
       display: none;
    }
+   .close {
+      display: none;
+   }
 
    .nav {
       display: block;
