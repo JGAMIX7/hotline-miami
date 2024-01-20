@@ -96,19 +96,19 @@ a {
    gap: 30px;
 }
 
-.close{
+.close {
    position: absolute;
    top: 18px;
    right: 24px;
 }
 
-.nav-item a{
+.nav-item a {
    font-size: 24px;
    transition: color .3s;
    position: relative;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
    color: var(--pink);
 }
 
@@ -163,7 +163,6 @@ a {
 
 /* ====== À propos ====== */
 .about {
-   margin-top: 30px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -183,7 +182,7 @@ a {
 }
 
 .desc-1 {
-   margin: 20px 0 30px;
+   margin-bottom: 20px;
 }
 
 /* ====== Galerie ====== */
@@ -243,6 +242,59 @@ i:hover {
    color: var(--blue);
 }
 
+@media all and (min-width: 800px) {
+   /* ====== Accueil ====== */
+   .accueil {
+      background: top / cover no-repeat url(../images/bg-large-screen.jpg);
+      min-height: 100vh;
+      width: 100%;
+      text-align: center;
+   }
+
+   .accueil-img {
+      height: 362px;
+   }
+
+   /* ====== À propos ====== */
+   .about {
+      padding: 50px;
+   }
+
+   .section-content {
+      display: flex;
+   }
+
+   .desc-1,
+   .desc-2 {
+      padding-left: 25px;
+      font-size: 12px;
+   }
+
+   /* ====== Galerie ====== */
+   .gallery-section {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .gallery-item {
+      height: 350px;
+   }
+   
+   /* ====== Acheter  ====== */
+   .buy-section {
+      flex-direction: row;
+      /* justify-content: start; */
+      gap: 30px;
+      padding-bottom: 50px;
+   }
+
+   .left-content {
+      width: auto;
+   }
+
+   .right-content {
+      text-align: start;
+   }
+}
 
 @media all and (min-width: 1280px) {
    .header {
@@ -258,6 +310,7 @@ i:hover {
    .toggle {
       display: none;
    }
+
    .close {
       display: none;
    }
@@ -269,13 +322,13 @@ i:hover {
       padding: 0;
       background-color: transparent;
    }
-   
-   .nav-list{
+
+   .nav-list {
       flex-direction: row;
       gap: 30px;
    }
 
-   .nav-item a{
+   .nav-item a {
       font-family: 'Rubik', sans-serif;
       font-weight: var(--700);
       font-size: 20px;
@@ -295,33 +348,19 @@ i:hover {
    }
 
    /* ====== À propos ====== */
-   .about {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 50px;
-   }
-
-   .about {
-      margin-top: 0;
-      padding: 50px;
-      height: 80vh;
-   }
-
-   .section-content{
+   .section-content {
       display: flex;
    }
 
-   iframe{
+   iframe {
       width: 550px;
       height: 450px;
    }
 
    .desc-1,
-   .desc-2{
+   .desc-2 {
       padding-left: 25px;
-      font-size: 18px;
+      font-size: 16px;
    }
 
    /* ====== Galerie ====== */
@@ -336,16 +375,22 @@ i:hover {
    /* ====== Acheter  ====== */
    .buy-section {
       flex-direction: row;
-      /* justify-content: start; */
       gap: 30px;
       padding-bottom: 50px;
    }
 
-   .left-content{
+   .left-content {
       width: auto;
    }
 
-   .right-content{
+   .right-content {
       text-align: start;
+   }
+}
+
+@media all and (min-width: 1440px) {
+   .desc-1,
+   .desc-2 {
+      font-size: 18px;
    }
 }
