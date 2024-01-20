@@ -171,7 +171,6 @@ a {
 
 .left-content {
    width: 100%;
-   /* height: 380px; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -328,6 +327,10 @@ i:hover {
    /* ====== Acheter  ====== */
    .buy-section {
       flex-direction: row;
-      padding-bottom: 20px;
+      padding-bottom: 50px;
+   }
+
+   .left-content{
+      width: auto;
    }
 }
