@@ -62,18 +62,17 @@ a {
 }
 
 .nav {
-   display: none;
    position: absolute;
-   top: 0px;
+   top: -320px;
    left: 0;
    width: 100%;
    background-color: var(--black-90);
    padding: 50px;
+   transition: all .3s ease;
 }
 
 .active {
-   /* top: 70px; */
-   display: block;
+   top: 0px;
 }
 
 .nav-list {
