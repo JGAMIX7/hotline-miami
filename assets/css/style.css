@@ -384,3 +384,27 @@ i:hover {
       font-size: 1.125rem;
    }
 }
+
+@media all and (min-width: 1700px) {
+   iframe{
+      width: 650px;
+      height: 550px;
+   }
+
+   .desc-1,
+   .desc-2 {
+      font-size: 1.25rem;
+   }
+}
+
+@media all and (min-width: 1900px) {
+   iframe{
+      width: 700px;
+      height: 550px;
+   }
+
+   .desc-1,
+   .desc-2 {
+      font-size: 1.35rem;
+   }
+}
