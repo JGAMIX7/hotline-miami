@@ -169,6 +169,10 @@ a {
    align-items: center;
 }
 
+/* iframe{
+   width: 100%;
+} */
+
 .desc-1 {
    margin-bottom: 20px;
 }
@@ -259,9 +263,10 @@ i:hover {
       font-size: 0.75rem;
    }
 
+
    /* ====== Galerie ====== */
    .gallery-section {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
    }
 
    .gallery-item {
