@@ -4,140 +4,195 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- ====== Google Fonts ====== -->
+   <!-- ===== Google Font - Rubki & Roboto Mono ===== -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Rubik:wght@700;900&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@300..900&display=swap"
       rel="stylesheet">
    <!-- ====== Remixicon ====== -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css">
-   <!-- ====== CSS ====== -->
+   <!-- ===== CSS ===== -->
    <link rel="stylesheet" href="assets/css/style.css">
-   <!-- ====== Favicon ====== -->
+   <!-- ===== Favicon ===== -->
    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-   <title>Hotline Miami</title>
+   <title>Hotline Miami Landing Page</title>
+
+   <!-- Créé par Jamel AGRCIOLE | jamelagricole.fr -->
 </head>
 
 <body>
-   <header class="header">
 
+   <!-- ===== Header ===== -->
+   <header>
       <a href="index.html">
-         <img class="logo" src="assets/images/dennaton-games.png" alt="Dennation Games">
+         <img class="logo" src="assets/images/dennaton-games-logo.png" alt="Logo Dennaton Games">
       </a>
 
+      <button class="toggle" id="toggle">
+         <i class="ri-menu-line"></i>
+      </button>
 
-      <div class="toggle" id="toggle">
-         <img src="assets/images/toggle.svg" alt="Menu">
-      </div>
-
-      <nav class="nav" id="menu">
+      <nav id="nav">
          <ul class="nav-list">
-            <!-- close btn -->
-            <li class="close" id="close"><img src="assets/images/close.svg" alt="Menu"></li>
+            <li class="close" id="close">
+               <i class="ri-close-line"></i>
+            </li>
 
-            <li class="nav-item"><a href="#home">Accueil</a></li>
-            <li class="nav-item"><a href="#about">À propos</a></li>
-            <li class="nav-item"><a href="#gallery">Galerie</a></li>
-            <li class="nav-item"><a href="#buy">Acheter</a></li>
+            <li class="nav-item">
+               <a href="#home" class="nav-link">Accueil</a>
+            </li>
+
+            <li class="nav-item">
+               <a href="#about" class="nav-link">À propos</a>
+            </li>
+
+            <li class="nav-item">
+               <a href="#gallery" class="nav-link">Galerie</a>
+            </li>
+
+            <li class="nav-item">
+               <a href="#buy" class="nav-link">Acheter</a>
+            </li>
          </ul>
       </nav>
    </header>
 
+   <!-- ===== main ===== -->
+   <!-- Accueil -->
    <main>
-      <section class="accueil" id="home">
-         <img class="accueil-img" src="assets/images/hotline-miami.png" alt="Hotline Miami">
-         <a href="#about"><img class="arrow" src="assets/images/down-arrow.svg" alt="Flèche" class="arrow"></a>
+      <section class="home" id="home">
+         <h1>
+            <img class="home-img" src="assets/images/hotline-miami.png" alt="Logo Hotline Miami">
+         </h1>
+
+         <span class="down-arrow">
+            <i class="ri-arrow-down-wide-fill"></i>
+         </span>
       </section>
 
+      <!-- À propos -->
       <section class="about" id="about">
-         <h2>À propos du jeu</h2>
-         <div class="section-content">
-            <div class="left-content">
-               <iframe width="370" height="370" src="https://www.youtube.com/embed/Qtl2fG-_l9M?si=eXNwv4uFvSgEzSph"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen>
-               </iframe>
-            </div>
+         <div class="about-content">
+            <h2 class="about-title">À propos d'Hotline Miami</h2>
 
-            <div class="right-content">
-               <p class="desc-1">
-                  Hotline Miami est un jeu d'action à haute intensité, débordant de brutalité, de jeu d'armes à feu et
-                  de combats rapprochés qui écrasent le crâne. Dans un Miami alternatif de 1989, vous incarnez un
-                  mystérieux antihéros qui se lance dans une folie meurtrière contre le monde interlope, à la demande
-                  des voix qui s'expriment sur votre répondeur. Très vite, vous aurez du mal à comprendre ce qui se
-                  passe et pourquoi vous êtes enclin à commettre ces actes de violence.
-               </p>
+            <p class="about-description">
+               Hotline Miami est un jeu d'action à haute intensité, débordant de brutalité,
+               de jeu d'armes à feu et de combats rapprochés qui vous écrasent le crâne.
+               Dans un Miami alternatif de 1989, vous incarnez un mystérieux antihéros qui
+               se lance dans une folie meurtrière contre le monde interlope, à la demande des voix
+               qui s'expriment sur votre répondeur. Très vite, vous aurez du mal à comprendre ce
+               qui se passe et pourquoi vous êtes enclin à commettre ces actes de violence.
+            </p>
 
-               <p class="desc-2">
-                  Comptez sur votre intelligence pour vous frayer un chemin dans des situations apparemment impossibles,
-                  alors que vous vous retrouvez constamment en infériorité numérique face à des ennemis vicieux.
-                  L'action est incessante et chaque tir est mortel. Chaque mouvement doit donc être rapide et décisif si
-                  vous espérez survivre et découvrir les forces sinistres qui sont à l'origine de l'effusion de sang. Le
-                  style visuel incomparable de Hotline Miami, sa bande-son entraînante et son enchaînement surréaliste
-                  d'événements vous feront remettre en question votre propre soif de sang tout en vous poussant dans vos
-                  derniers retranchements grâce à un défi brutal et impitoyable.
-               </p>
-            </div>
+            <p class="about-description">
+               Comptez sur votre intelligence pour vous frayer un chemin dans des situations apparemment impossibles,
+               car vous vous retrouvez constamment en infériorité numérique face à des ennemis vicieux. L'action est
+               incessante et chaque tir est mortel. Chaque mouvement doit donc être rapide et décisif si vous espérez
+               survivre et découvrir les forces sinistres qui sont à l'origine de l'effusion de sang. Le style visuel
+               incomparable de Hotline Miami, sa bande-son entraînante et son enchaînement surréaliste d'événements vous
+               feront remettre en question votre propre soif de sang tout en vous poussant dans vos derniers
+               retranchements grâce à un défi brutal et impitoyable.
+            </p>
+         </div>
+
+         <div class="about-video">
+            <iframe width="370" height="370" src="https://www.youtube.com/embed/Qtl2fG-_l9M?si=eXNwv4uFvSgEzSph"
+               title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen>
+            </iframe>
          </div>
       </section>
 
-      <section class="gallery-section" id="gallery">
-         <figure class="gallery-item">
-            <img src="assets/images/galerie/image-1.jpg" alt="Image 1" class="galerie-img">
-         </figure>
-         <figure class="gallery-item">
-            <img src="assets/images/galerie/image-2.jpg" alt="Image 2" class="galerie-img">
-         </figure>
-         <figure class="gallery-item">
-            <img src="assets/images/galerie/image-3.jpg" alt="Image 3" class="galerie-img">
-         </figure>
-         <figure class="gallery-item">
-            <img src="assets/images/galerie/image-4.jpg" alt="Image 4" class="galerie-img">
-         </figure>
-         <figure class="gallery-item">
-            <img src="assets/images/galerie/image-5.jpg" alt="Image 5" class="galerie-img">
-         </figure>
-         <figure class="gallery-item">
-            <img src="assets/images/galerie/image-6.jpg" alt="Image 6" class="galerie-img">
-         </figure>
+      <!-- Galerie -->
+      <section class="gallery" id="gallery">
+         <ul class="gallery-list">
+            <li class="gallery-item">
+               <figure>
+                  <img class="gallery-img" src="assets/images/galerie/image-1.webp" alt="Image 1">
+               </figure>
+            </li>
+
+            <li class="gallery-item">
+               <figure>
+                  <img class="gallery-img" src="assets/images/galerie/image-2.webp" alt="Image 1">
+               </figure>
+            </li>
+
+            <li class="gallery-item">
+               <figure>
+                  <img class="gallery-img" src="assets/images/galerie/image-3.webp" alt="Image 1">
+               </figure>
+            </li>
+
+            <li class="gallery-item">
+               <figure>
+                  <img class="gallery-img" src="assets/images/galerie/image-4.webp" alt="Image 1">
+               </figure>
+            </li>
+
+            <li class="gallery-item">
+               <figure>
+                  <img class="gallery-img" src="assets/images/galerie/image-5.webp" alt="Image 1">
+               </figure>
+            </li>
+
+            <li class="gallery-item">
+               <figure>
+                  <img class="gallery-img" src="assets/images/galerie/image-6.webp" alt="Image 1">
+               </figure>
+            </li>
+         </ul>
       </section>
 
+      <!-- Acheter -->
       <section class="buy-section" id="buy">
-
-         <div class="left-content">
-            <img src="assets/images/game-cover-mobile.png" alt="Hotline Miami">
+         <div class="game-cover">
+            <img src="assets/images/game-cover.png" alt="">
          </div>
 
-         <div class="right-content">
-            <div class="first-infos">
-               <h1>Hotline Miami</h1>
-               <p>Développeur : Dennation Games</p>
-               <p>Éditeur : Devolver Digital</p>
-               <p>Date de parution : 23 oct 2012</p>
-            </div>
+         <div class="buy-content">
+            <h2 class="buy-title">Hotline Miami</h2>
 
-            <div class="second-infos">
-               <h2>Disponible sur :</h2>
-               <div class="devices">
-                  <ul class="devices-list">
-                     <li class="device"><a
-                           href="https://store.playstation.com/fr-lu/product/EP3643-CUSA00528_00-HOTLINEMIAMIBNDL"
-                           target="_blank"><i class="ri-playstation-fill"></i></a></li>
-                     <li class="device"><a href="https://www.xbox.com/fr-FR/games/store/hotline-miami/9MV27QPRQRRF"
-                           target="_blank"><i class="ri-xbox-fill"></i></a></li>
-                     <li class="device"><a
-                           href="https://www.nintendo.fr/Jeux/Jeux-a-telecharger-sur-Nintendo-Switch/Hotline-Miami-Collection-1621521.html"
-                           target="_blank"><i class="ri-switch-fill"></i></a></li>
-                     <li class="device"><a href="https://store.steampowered.com/app/219150/Hotline_Miami/?l=french"
-                           target="_blank"><i class="ri-steam-fill"></i></a></li>
-                  </ul>
-               </div>
+            <p>Développeur : Dennation Games</p>
+            <p>Éditeur : Devolver Digital</p>
+            <p>Date de parution : 23 oct 2012</p>
+
+            <h4 class="buy-second-title">Disponble sur :</h4>
+            <div class="devices-available">
+
+               <ul class="platform-list">
+                  <li>
+                     <a href="https://store.playstation.com/fr-lu/product/EP3643-CUSA00528_00-HOTLINEMIAMIBNDL"
+                        target="_blank"><i class="ri-playstation-fill platform-icon"></i></a>
+                  </li>
+
+                  <li>
+                     <a href="https://www.xbox.com/fr-FR/games/store/hotline-miami/9MV27QPRQRRF" target="_blank"><i
+                           class="ri-xbox-fill platform-icon"></i></a>
+                  </li>
+
+                  <li>
+                     <a href="https://www.nintendo.fr/Jeux/Jeux-a-telecharger-sur-Nintendo-Switch/Hotline-Miami-Collection-1621521.html"
+                        target="_blank"><i class="ri-switch-fill platform-icon"></i></a>
+                  </li>
+
+                  <li>
+                     <a href="https://store.steampowered.com/app/219150/Hotline_Miami/?l=french" target="_blank"><i
+                           class="ri-steam-fill platform-icon"></i></a>
+                  </li>
+               </ul>
             </div>
          </div>
       </section>
    </main>
 
+   <!-- ===== Footer ===== -->
+   <footer>
+      <p class="footer-text">site créé par &copy; Jamel Agricole, 2O24</p>
+   </footer>
+
+   <!-- ===== Ionicons ===== -->
    <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 
